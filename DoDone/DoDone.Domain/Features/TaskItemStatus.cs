@@ -7,6 +7,6 @@ namespace DoDone.Domain.Features
         ToDo,
         InProgress,
         Snoozed,
-        Done,
+        Done
     }
 }

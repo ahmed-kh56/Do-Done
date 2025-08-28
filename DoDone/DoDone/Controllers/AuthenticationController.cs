@@ -1,15 +1,14 @@
+using DoDone.Application.Commands.Authentication.ConfirmEmail;
+using DoDone.Application.Commands.Authentication.CreateToken;
+using DoDone.Application.Commands.Authentication.PasswordReset;
+using DoDone.Application.Queries.Authentication.Login;
 using DoDone.Authentication;
-using DoDone.Application.Authentication.Commands.ConfirmEmail;
-using DoDone.Application.Authentication.Commands.CreateToken;
-using DoDone.Application.Authentication.Commands.PasswordReset;
-using DoDone.Application.Authentication.Queries.Login;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DoDone.Controllers;
 [Route("[controller]")]
-[AllowAnonymous]
 public class AuthenticationController: ApiController
 {
 
@@ -61,7 +60,7 @@ public class AuthenticationController: ApiController
     [HttpPost("ConfirmEmail")]
     public async Task<IActionResult> ConfirmEmail(ConfirmEmailRequest request)
     {
-        var command = new ConfirmEmailCommand(request.Email, request.Token,request.UserId);
+        var command = new ConfirmEmailCommand(request.Email, request.Token, request.UserId);
 
         var Result = await _mediator.Send(command);
 

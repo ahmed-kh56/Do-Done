@@ -1,7 +1,5 @@
 ﻿using ErrorOr;
 using DoDone.Domain.Common;
-using System.Data;
-
 namespace DoDone.Domain.Users;
 
 public class User

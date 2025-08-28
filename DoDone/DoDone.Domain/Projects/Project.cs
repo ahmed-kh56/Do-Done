@@ -1,4 +1,5 @@
-﻿using DoDone.Domain.Roles;
+﻿using DoDone.Domain.Features;
+using DoDone.Domain.Roles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +18,7 @@ namespace DoDone.Domain.Projects
         public bool IsCompleted { get; set; }
         public DateTime? EndDate { get; set; }
         public ICollection<ProjectUserRole> ProjectUserRoles { get; set; } = new List<ProjectUserRole>();
+        public ICollection<Feature> Features { get; set; }= new List<Feature>();
     }
 
 

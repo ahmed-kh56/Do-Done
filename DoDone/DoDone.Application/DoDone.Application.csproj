@@ -17,4 +17,8 @@
     <ProjectReference Include="..\DoDone.Domain\DoDone.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Common\Dtos\" />
+  </ItemGroup>
+
 </Project>

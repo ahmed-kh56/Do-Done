@@ -1,5 +1,4 @@
-﻿using DoDone.Application.Authentication.Common;
-using DoDone.Application.Commands.Authentication.Register;
+﻿using DoDone.Application.Commands.Authentication.Register;
 using DoDone.Application.Queries.Authentication;
 
 namespace DoDone.Authentication

@@ -1,7 +1,6 @@
 ﻿using ErrorOr;
 using DoDone.Application.Common.Interfaces.Repositories;
 using DoDone.Application.Common.Interfaces.Service;
-using DoDone.Application.Authentication.Common;
 using DoDone.Domain.Common;
 using DoDone.Domain.Users;
 using MediatR;
@@ -20,7 +19,6 @@ namespace DoDone.Application.Commands.Authentication.PasswordReset
     {
         public async Task<ErrorOr<AuthenticationResult>> Handle(ResetPasswordCommand request, CancellationToken cancellationToken)
         {
-            // 1️⃣ تجيب اليوزر
             var user = await _usersRepository.GetByEmailAsync(request.Email);
             if (user is null)
             {

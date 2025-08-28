@@ -1,7 +1,4 @@
-﻿
-
-using DoDone.Application.Common.Interfaces.Service;
-using HealLink.Infrastructure.Services.Email;
+﻿using DoDone.Application.Common.Interfaces.Service;
 using Microsoft.Extensions.Options;
 using System.Net;
 using System.Net.Mail;

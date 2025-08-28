@@ -1,5 +1,4 @@
 ﻿using ErrorOr;
-using DoDone.Application.Authentication.Common;
 using MediatR;
 using DoDone.Application.Queries.Authentication;
 

@@ -1,5 +1,4 @@
 using ErrorOr;
-
 using MediatR;
 using DoDone.Domain.Common;
 using DoDone.Application.Common.Interfaces.Service;
@@ -16,6 +15,7 @@ public class LoginQueryHandler(
     IProjectUserRolesRepository _rolesRepository)
         : IRequestHandler<LoginQuery, ErrorOr<AuthenticationResult>>
 {
+
     public async Task<ErrorOr<AuthenticationResult>> Handle(LoginQuery query, CancellationToken cancellationToken)
     {
         var user = await _usersRepository.GetByEmailAsync(query.Email);

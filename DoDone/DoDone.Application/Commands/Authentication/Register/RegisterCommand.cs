@@ -1,7 +1,6 @@
 using ErrorOr;
 
 using MediatR;
-using DoDone.Application.Authentication.Common;
 using DoDone.Application.Queries.Authentication;
 
 namespace DoDone.Application.Commands.Authentication.Register;
