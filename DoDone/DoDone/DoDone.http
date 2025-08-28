@@ -1,0 +1,6 @@
+@DoDone_HostAddress = http://localhost:5192
+
+GET {{DoDone_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
