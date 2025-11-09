@@ -1,0 +1,14 @@
+﻿using ErrorOr;
+using MediatR;
+using DoDone.Application.Common.Dtos.UserDtos;
+
+
+namespace DoDone.Application.Commands.Authentication.PasswordReset;
+
+public partial record ResetPasswordCommand(
+    string Email,
+    string Token,
+    string NewPassword
+) : IRequest<ErrorOr<AuthenticationResult>>;
+
+

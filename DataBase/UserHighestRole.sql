@@ -1,0 +1,8 @@
+CREATE TABLE Reading.UserHighestRole
+(
+    UserId UNIQUEIDENTIFIER NOT NULL PRIMARY KEY,
+    RoleName NVARCHAR(100) NULL
+);
+
+
+
